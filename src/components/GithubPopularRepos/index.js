@@ -78,11 +78,11 @@ class GithubPopularRepos extends Component {
   )
 
   renderRepositoriesListView = () => {
-    const {repositoriesData} = this.state
+    const {repositoriesDetails} = this.state
 
     return (
       <ul className="repositories-cards-list-container">
-        {repositoriesData.map(eachRepository => (
+        {repositoriesDetails.map(eachRepository => (
           <RepositoryItem
             key={eachRepository.id}
             repositoryDetails={eachRepository}
