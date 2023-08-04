@@ -45,7 +45,7 @@ class GithubPopularRepos extends Component {
         id: eachRepository.id,
         imageUrl: eachRepository.avatar_url,
         name: eachRepository.name,
-        startsCount: eachRepository.stars_count,
+        starsCount: eachRepository.stars_count,
         forksCount: eachRepository.forks_count,
         issuesCount: eachRepository.issues_count,
       }))
@@ -85,7 +85,7 @@ class GithubPopularRepos extends Component {
         {repositoriesData.map(eachRepository => (
           <RepositoryItem
             key={eachRepository.id}
-            repositoryData={eachRepository}
+            repositoryDetails={eachRepository}
           />
         ))}
       </ul>
